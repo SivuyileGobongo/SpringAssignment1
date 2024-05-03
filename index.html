@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Your first Spring application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<form action="/add" method="POST">
+    <p>Let's add a course.</p>
+
+    <div>
+        <label for="courseName">Course name:</label>
+        <input name="course" id="courseName" value="CSC">
+    </div>
+    <div>
+        <label for="courseCatalogue">Course Catalogue:</label>
+        <input name="catalogue" id="courseCatalogue" value="313">
+    </div>
+    <div>
+        <button>Add course</button>
+    </div>
+</form>
+
+<form action="/list" method="GET">
+    <button>List course</button>
+</form>
+</body>
+</html>
+
